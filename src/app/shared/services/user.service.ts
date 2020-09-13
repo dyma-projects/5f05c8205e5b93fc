@@ -13,13 +13,13 @@ export class UserService {
 
   addUser(nomUser){
     // liste de départ
-    const monUser = this.users.value;
+    const mesUsers = this.users.value;
     // ajouter user dans la liste des users
-    const updateUser = [...monUser, nomUser];
+    const updateUsers = [...mesUsers, nomUser];
     // afficher la liste users avec la mise jour
-    this.users.next(updateUser);
+    this.users.next(updateUsers);
 
-    console.log("liste de départ ", monUser);
+    console.log("liste de départ ", mesUsers);
     console.log("nomUser ajouté ", nomUser);
     console.log("liste des users mise à jour", this.users);
   }
